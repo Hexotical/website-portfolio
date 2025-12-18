@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 1rem;
+    gap: 0rem;
+}
+
+.top-nav {
+    background-color: blue;
+    color: chocolate;
+    font-size: 90px;
+    padding: 40px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.top-nav:hover {
+    background-color: chartreuse;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+body {
+    background-color: #d45959;
+    color: black;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 6.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
