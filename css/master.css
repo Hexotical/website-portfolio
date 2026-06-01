@@ -1,29 +1,48 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: aqua;
-    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0rem;
+    margin: 0rem;
     gap: 0rem;
+    width: 100%;
 }
 
-.top-nav {
-    background-color: blue;
+head {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homepage {
     color: chocolate;
-    font-size: 90px;
-    padding: 40px;
+    text-decoration: none;
+}
+.top-nav {
+    background-color: rgb(255, 255, 255);
+    color: chocolate;
+    font-size: 1.5rem;
+    padding: 1rem;
     border: none;
-    border-radius: 0px;
+    border-radius: 0rem;
     cursor: pointer;
     text-decoration: none;
 }
-
+.top-nav.active {
+    background-color: rgb(230, 230, 230);
+    color: white;
+    font-weight: bold;
+}
 .top-nav:hover {
-    background-color: chartreuse;
+    background-color: rgb(216, 216, 216);
+    font-weight: bold;
 }
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
+    padding: 1rem;
     margin: auto;
 }
 .slide {
@@ -36,8 +55,11 @@ nav {
     object-fit: cover;
 }
 body {
-    background-color: #d45959;
+    background-color: #f1f1f1;
     color: black;
+    margin: 0;
+    padding: 0;
+
 }
 
 
