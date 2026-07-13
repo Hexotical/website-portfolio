@@ -14,8 +14,24 @@
 </h1>
 <p>
 So programming is fun. I think every once in a while the joy of programming leaves me,
-and it takes something to bring back some of that joy.
+and it takes something to bring back some of that joy. Tis 100 is one of those games,
+sort of arbitrary constraints and an limited instruction set that just make you think.
+<br><br>
+One of my favourite solutions so far has been solving multiplication. 
+The best thing about the game is how seemingly simple operations that are 
+fundamental to a lot of computer operations become surprisingly difficult.
+My implementation unfortunately can't handle negative numbers or numbers greater
+than 15 (The size of the stack in the game). 
+<br><br>
+The biggest challenge I ran into was ensuring that the correct inputs were multiplied together;
+In Tis 100, each node functions independently, this can cause some problems as inputs processed at 
+different times can mean I generate incorrect output. To combat this I had to ensure
+that each node waited for a return value, ensuring that inputs were processed together 
+and giving the correct return values.
+
+
 </p>
+
 
 <!-- Our codes -->
 <script src="js/main.js"></script>
