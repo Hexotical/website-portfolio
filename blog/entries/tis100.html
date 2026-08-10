@@ -13,23 +13,23 @@
     Beating TIS 100
 </h1>
 <p>
-So programming is fun. I think every once in a while the joy of programming leaves me,
-and it takes something to bring back some of that joy. Tis 100 is one of those games,
-sort of arbitrary constraints and an limited instruction set that just make you think.
+Tis-100 is a neat programming game by Zactronics, the plot of the game is essentially you've inherited an old computer from
+your uncle after his untimely demise. You ostensibly want to figure out what your uncle was doing and decide to continue
+his work fixing this computer. Yada yada yada, you solve a bunch of puzzles with the constraints of the computer, 
+the fun thing about tis-100 is it's emulating a massively parallel computer architecture, a bunch of independent nodes 
+that can only communicate directly with their immediate neighbors. It leads to some neat puzzles, below are some of my 
+favourite solutions to them.
 <br><br>
-One of my favourite solutions so far has been solving multiplication. 
-The best thing about the game is how seemingly simple operations that are 
-fundamental to a lot of computer operations become surprisingly difficult.
-My implementation unfortunately can't handle negative numbers or numbers greater
-than 15 (The size of the stack in the game). 
+Below is my solution to remainder division, my favourite bit about this is how the two middle nodes basically do everything,
+and keep eachother updated, one keeping track of the remainder, one keeping track of how many times B divides A.
+<img src="../pics/tis-division.png" alt="Division in Tis-100">
 <br><br>
-The biggest challenge I ran into was ensuring that the correct inputs were multiplied together;
-In Tis 100, each node functions independently, this can cause some problems as inputs processed at 
-different times can mean I generate incorrect output. To combat this I had to ensure
-that each node waited for a return value, ensuring that inputs were processed together 
-and giving the correct return values.
-
-
+Some of the puzzles have to do with the computer's "screen", drawing rectangles, surprisingly difficult.
+<img src="../pics/tis-rect.png" alt="Drawing rectangles in Tis-100">
+<br><br>
+My solution to multiplication is probably my favourite, it took me a while to write, but it's really satisfying to 
+watch run.
+<img src="../pics/tis-mult.png" alt="Multiplication in Tis-100">
 </p>
 
 
